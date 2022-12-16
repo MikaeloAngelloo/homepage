@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: rgb(223, 221, 221);
+    color: #333;
+    margin: 0px auto;
+    font-family: 'Lato', sans-serif;
+    max-width: 1000px;
+    text-align: center;
+  
+
+
+}
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.menuItem {
+    padding: 15px;
+    background-color: #3e3e3e;
+    display: inline;
+    cursor: pointer;
+    color: white;
+}
+.submenu {
+    text-decoration: none;
+    color: inherit;
+    font-size: 27px;
+    border-radius: 10px;
+    
+}
+.menuItem:hover {
+    background-color: #3e3e3e;
+    border-bottom: 0px solid gray;
+    color: gray;
+}
+
+
+.button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(196, 194, 194, 0.952);
+}
+.dark {
+    color: #eee;
+    background: rgb(173, 173, 173);
+}
+.naglowek {
+    background-color: rgb(53, 52, 52);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 20px / 90px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+
+}
+.zdjecie {
+    border-radius: 40px;
+    box-shadow: 10px -10px 15px 0px #4d738d;
+    outline: 2px solid #4d738d;
+}
+.text {
+    background-color: rgb(160, 160, 160);
+    padding: 30px;
+    border-radius: 20px;
+    border: 5px double gray;
+    box-shadow: 10px -10px 15px 0px #6D756F;
+    line-height: 1.5;
+    border-radius: 30px 60px 30px 60px;
+}
+
+.link {
+    text-decoration: none;
+}
+.container {
+    overflow-x: auto;
+}
+.footer {
+    background-color: gray;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.element {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableCell {
+    border: 2px solid rgb(53, 52, 52);
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.caption {
+    caption-side: bottom;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.tableHeader {
+    background-color: gray;
+    color: white;
+    font-weight: normal;
+}
+
+.tableRow:nth-child(even) {
+    background: rgb(223, 221, 221);
+}
+
+.tableRow:hover {
+    background: gray;
+}
+
