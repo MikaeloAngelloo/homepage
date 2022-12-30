@@ -1,10 +1,16 @@
-let button = document.querySelector(".button");
-let body = document.querySelector(".body");
-let themeName = document.querySelector(".themeName");
+{
+  const onChangeBackgroundClick = () => {
+    const body = document.querySelector(".body");
+    const themeName = document.querySelector(".themeName");
+    body.classList.toggle("dark");
+    themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
+  };
 
+  const init = () => {
+    const button = document.querySelector(".button");
 
+    button.addEventListener("click", onChangeBackgroundClick);
+  };
 
-button.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
-});
+  init();
+}
